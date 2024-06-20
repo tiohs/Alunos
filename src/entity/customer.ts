@@ -9,7 +9,6 @@ export class Customer {
   constructor(id: string, name: string) {
     this._id = id;
     this._name = name;
- 
     this.validate();
   } 
 
@@ -40,5 +39,13 @@ export class Customer {
 
   deactivate(): void {
     this._active = false;
+  }
+
+  get name(): string {
+    return this._name;
+  }
+
+  isActive(): boolean {
+    return this._active;
   }
 }
