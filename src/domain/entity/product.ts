@@ -20,6 +20,9 @@ export default class Product {
       throw new Error('Price must be greater than zero')
     }
   }
+  get id(): string {
+    return this._id
+  }
   get name(): string {
     return this._name
   }
