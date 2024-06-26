@@ -3,7 +3,7 @@ import { Customer } from "./customer";
 
 describe("Customer unit tests", () => {
 
-  it("should thow error when id is empty", () => {
+  it("should throw error when id is empty", () => {
     expect(() => { let customer = new Customer("", "John") }).toThrow("Id is required")
   });
 
@@ -19,7 +19,7 @@ describe("Customer unit tests", () => {
 
   it("should activate customer", () => {
     const customer = new Customer("1", "Customer 1")
-    const address = new Address("Street 1", "123", "12345-678", "City 1");
+    const address = new Address("Street 1", "123", 12345, "City 1");
     customer.address = address;
 
     customer.activate();
