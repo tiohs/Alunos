@@ -1,6 +1,6 @@
 import { OrderItem } from "./order_item";
 
-export default class Order {
+export class Order {
   private _id: string;
   private _customerId: string;
   private _items: OrderItem[];
@@ -30,6 +30,15 @@ export default class Order {
       throw new Error('Quantity must be greater than zero');
     }
     return true
+  }
+  get id(): string {
+    return this._id;
+  }
+  get customerId(): string {
+    return this._customerId;
+  }
+  get items(): OrderItem[] {
+    return this._items
   }
   total(): number {
     return this._items.reduce((total, item) => total + item.price, 0)

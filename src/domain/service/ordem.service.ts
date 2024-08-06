@@ -1,6 +1,6 @@
 import { randomUUID as uuid } from 'node:crypto'
 import { Customer } from "../entity/customer";
-import Order from "../entity/order";
+import { Order } from "../entity/order";
 import { OrderItem } from "../entity/order_item";
 
 export default class OrderService {
