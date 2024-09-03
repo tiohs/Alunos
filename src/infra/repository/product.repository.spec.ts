@@ -58,7 +58,7 @@ describe("Product repository unit tests", () => {
     const productRepository = new ProductRepository();
     const product = new Product("1", "Product 1", 10);
 
-    await productRepository.create(product);
+    await productRepository.create(product); 
     const productModel = await ProductModel.findOne({ where: { id: "1" } });
     const foundProduct = await productRepository.find("1")
     

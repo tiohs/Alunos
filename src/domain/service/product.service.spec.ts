@@ -14,4 +14,4 @@ describe("Product service unit tests", () =>
     expect(product2.price).toBe(40)
     expect(product3.price).toBe(60)
   })
-})
+}) 
