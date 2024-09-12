@@ -59,3 +59,4 @@ describe('Domine events tests', () => {
       expect(spyEventHandler).toHaveBeenCalled();  
     })
  })
+ 
